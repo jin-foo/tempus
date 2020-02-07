@@ -1,0 +1,10 @@
+{
+  "NotebookApp": {
+    "nbserver_extensions": {
+      "jupyterlab_git": true,
+      "jupyter_http_over_ws": true,
+      "nbdime": true,
+      "jupyter_aihub_deploy_extension": true
+    }
+  }
+}
