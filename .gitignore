@@ -5,6 +5,7 @@
 .ipython
 .jupyter
 .local
+.profile
 
 # Jupyter Notebook
 .ipynb_checkpoints
