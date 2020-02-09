@@ -25,6 +25,8 @@ venv.bak/
 dmypy.json
 
 # Files:
+.bash_logout
+.bashrc
 *.log
 *.ini
 *.gsheet
