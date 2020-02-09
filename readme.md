@@ -1,2 +1,2 @@
 ### Hello
-This repo is a focussed study of various time-series methods and practical applications to predicting results in commercial environments.
+Tempus is a study of time-series methods both classical and modern with practical applications measuring the efficacy of each method in predicting results.
