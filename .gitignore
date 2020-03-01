@@ -29,6 +29,7 @@ dmypy.json
 # Files:
 .bash_logout
 .bashrc
+.viminfo
 *.log
 *.ini
 *.gsheet
