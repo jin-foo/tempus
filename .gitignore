@@ -6,6 +6,8 @@
 .jupyter
 .local
 .profile
+.idea
+.vscode
 
 # Jupyter Notebook
 .ipynb_checkpoints
