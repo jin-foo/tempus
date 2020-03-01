@@ -35,7 +35,7 @@ logger = logging.getLogger()
 
 # quality-of-life
 pd.set_option("display.expand_frame_repr", False)
-plt.rcParams["figure.figsize"] = (16, 16)
+plt.rcParams["figure.figsize"] = (16, 8)
 plt.style.use("seaborn")
 warnings.filterwarnings("ignore")
 register_matplotlib_converters()
@@ -61,7 +61,7 @@ dc = sm.tsa.seasonal_decompose(ts, model="additive", freq=12)
 dv = dc.plot()
 
 # auto-correlation
-fig, ax = plt.subplots(2, 1, figsize=(16, 16))
+fig, ax = plt.subplots(2, 1)
 ac = plot_acf(ts["Value"], ax=ax[0])
 pc = plot_pacf(ts["Value"], ax=ax[1])
 plt.show()
