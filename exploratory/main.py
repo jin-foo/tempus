@@ -1,5 +1,6 @@
 # ------------------------------------------------------------
 # Setup
+# ------------------------------------------------------------
 # libraries
 import os
 import sys
@@ -17,7 +18,7 @@ from pandas.plotting import register_matplotlib_converters
 # directories
 WDIR = f"{os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))}"
 PDIR = os.path.dirname(WDIR)
-sys.path.insert(0, WDIR)
+sys.path.insert(0, f"{WDIR}/tempus/exploratory")
 
 from tardis import sorter
 from tardis import time_machine
@@ -46,8 +47,8 @@ print(f"Completed: Environment Setup")
 # EDA
 # ------------------------------------------------------------
 # ETL
-dt = pd.read_csv(f"{PDIR}/data/crops.csv", sep=",", encoding="cp1252")
-df = sorter(dt, "Australia", "Potatoes")
+dt = pd.read_csv(f"{WDIR}/tempus/data/crops.csv", sep=",", encoding="cp1252")
+df = sorter(dt, "Australia", "Cauliflowers and broccoli")
 
 # visualise
 fig = plt.figure()
@@ -71,8 +72,9 @@ print(f"Completed: Time-series Analysis")
 # ------------------------------------------------------------
 # Outputs
 # ------------------------------------------------------------
+# Step-by-Step
 # predictions
-predict_ci = time_machine(ts, start=39, s=1)
+predict_ci = time_machine(ts, start=0, s=1, dynamic=False)
 
 # visualise
 cb = df[["Year Code", "Value"]].merge(

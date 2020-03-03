@@ -77,6 +77,7 @@ def time_machine(ts, start=0, s=1, dynamic=True):
     pdq_ = [(x[0], x[1], x[2], s) for x in pdq]
 
     # hyperparameter grid search
+    # TODO add get_context(Spawn)
     try:
         with Pool() as pool:
             iterList = product(pdq, pdq_)
