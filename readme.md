@@ -1,2 +1,3 @@
 ### Hello
-Tempus is a study of classical and modern time-series forecasting methods with practical applications.
+
+Tempus is a collection of time-series and anomaly detection projects; for exploration and personal development.
